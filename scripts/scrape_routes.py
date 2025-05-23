@@ -34,9 +34,10 @@ for route_el in routes_elements:
     dir1_span = driver.find_element(By.CSS_SELECTOR, "#spanDir1")
     dir1_text = dir1_span.text.strip()
     dir1_href = driver.current_url
-
+    dir1_span.click()
+    time.sleep(1)
     WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#ulDirections a"))
+        EC.visibility_of_all_elements_located((By.CSS_SELECTOR, "#ulDirections a"))
     )
 
     directions = driver.find_elements(By.CSS_SELECTOR, "#ulDirections a")
