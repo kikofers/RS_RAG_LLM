@@ -1,3 +1,6 @@
+# Unnecessary script, because we already have GTFS data.
+
+"""
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -58,3 +61,4 @@ driver.quit()
 os.makedirs("data", exist_ok=True)
 with open("data/routes.json", "w", encoding="utf-8") as f:
     json.dump(routes, f, ensure_ascii=False, indent=2)
+"""
