@@ -1,0 +1,1700 @@
+[
+  {
+    "route_name": "1Imanta - Jugla",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/a-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/a-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/d3-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/b-c"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/b-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/c-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/d3-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/d5-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/1/d5-c"
+      }
+    ]
+  },
+  {
+    "route_name": "5Iļģuciems - Mīlgrāvis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/5/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/5/a-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/5/d3-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/5/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/5/b-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/5/d3-a"
+      }
+    ]
+  },
+  {
+    "route_name": "7Ausekļa iela - Ķengarags",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/a-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/d3-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/d5-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/b-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/b-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/d3-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/7/d5-a"
+      }
+    ]
+  },
+  {
+    "route_name": "8Mīlgrāvis - Tapešu iela",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/a1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/a-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/d3-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/b-a1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/b-a1-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/b-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/d3-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/8/d3-a1"
+      }
+    ]
+  },
+  {
+    "route_name": "10Centrāltirgus - Bišumuiža",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/10/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/10/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/10/b-a-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/10/d3-a"
+      }
+    ]
+  },
+  {
+    "route_name": "11Ausekļa iela - Mežaparks",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/a-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/a-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/d3-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/b-c"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/b-d3"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/c-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/d3-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/11/d5-a"
+      }
+    ]
+  },
+  {
+    "route_name": "14Iļģuciems - Ķengarags",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/14/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/14/a-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/14/d5-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/14/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/14/b-d5"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#tram/14/d5-a"
+      }
+    ]
+  },
+  {
+    "route_name": "1Valmieras iela - Pētersala",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/1/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/1/a-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/1/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/1/d1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "3Centrāltirgus - Sarkandaugava",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/a-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/a-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/d1-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/b1-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/b-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/b1-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/3/d1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "4Jugla - Ziepniekkalns",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/a-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/a-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/b-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/b-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/d1-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/4/d2-a"
+      }
+    ]
+  },
+  {
+    "route_name": "5Daugavas stadions - Paula Stradiņa slimnīca",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/5/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/5/a-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/5/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/5/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/5/d1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "9Stacijas laukums - Iļģuciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/9/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/9/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/9/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/9/b-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/9/d2-a"
+      }
+    ]
+  },
+  {
+    "route_name": "11Centrālā stacija - Ieriķu iela",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/11/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/11/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/11/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/11/b-d1"
+      }
+    ]
+  },
+  {
+    "route_name": "12Āgenskalna priedes - Šmerlis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/a-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/a-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/b-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/d1-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/12/d2-a"
+      }
+    ]
+  },
+  {
+    "route_name": "13Centrāltirgus - Ieriķu iela",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/13/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/13/a-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/13/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/13/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/13/d1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "14Esplanāde - Mežciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/14/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/14/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/14/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/14/b-a-d2"
+      }
+    ]
+  },
+  {
+    "route_name": "15Latvijas Universitāte - Ķengarags",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/15/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/15/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/15/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/15/b-c"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/15/b-d1"
+      }
+    ]
+  },
+  {
+    "route_name": "16Pļavnieki - Šmerlis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/16/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/16/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/16/d1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "17Centrālā stacija - Purvciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/17/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/17/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/17/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/17/b-a-d2"
+      }
+    ]
+  },
+  {
+    "route_name": "18Centrālā stacija - Mežciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/18/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/18/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/18/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/18/b-d2"
+      }
+    ]
+  },
+  {
+    "route_name": "19Pētersala - Ziepniekkalns",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/a-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/a-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/b-c-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/b-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/b-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/19/d2-a"
+      }
+    ]
+  },
+  {
+    "route_name": "20Latvijas Universitāte - Televīzijas centrs",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/20/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/20/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/20/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/20/b-d1"
+      }
+    ]
+  },
+  {
+    "route_name": "22Centrālā stacija - Pļavnieki",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/22/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/22/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/22/b-d1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/22/d1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "23Centrālā stacija - Purvciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/23/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/23/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/23/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/23/b-d2"
+      }
+    ]
+  },
+  {
+    "route_name": "25Brīvības iela - Iļģuciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/25/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/25/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/25/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/25/b-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/25/d2-a"
+      }
+    ]
+  },
+  {
+    "route_name": "27Stacijas laukums - Ziepniekkalns",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/27/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/27/a-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/27/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/27/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/27/b-d2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/27/d2-a"
+      }
+    ]
+  },
+  {
+    "route_name": "31Centrāltirgus - Berģuciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/31/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/31/d2-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/31/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/31/b-d2"
+      }
+    ]
+  },
+  {
+    "route_name": "34Centrāltirgus - Mazā Juglas iela",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/34/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/34/d1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/34/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/34/b-d1"
+      }
+    ]
+  },
+  {
+    "route_name": "35Centrāltirgus - Mežciems",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/35/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/35/d2-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#trol/35/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "2Abrenes iela - Vecmīlgrāvis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/2/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/2/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/2/b1-b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "3Daugavgrīva - Pļavnieki",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/a-b2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/a1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/a3-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/b-a1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/b-a1_67"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/3/b1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "4Abrenes iela - Piņķi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/4/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/4/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "6Abrenes iela - Biķeri",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/6/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/6/a-b-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/6/a1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/6/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "7Abrenes iela - Stīpnieki",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/7/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/7/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "8Stacijas laukums - Zolitūde",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/8/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/8/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "9Abrenes iela - Mežaparks",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/9/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/9/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "10Abrenes iela - Jaunmārupe",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/10/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/10/a-b-b2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/10/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/10/b1-b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "11Abrenes iela - Jaunciems - Suži",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/11/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/11/a-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/11/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/11/b1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "12Abrenes iela - Ziedonis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/12/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/12/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "13Babītes stacija - Kleisti - Preču 2",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/13/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/13/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "15Dārziņi - Jugla",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/15/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/15/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "16Abrenes iela - Papīrfabrika \"Jugla\"",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/a-b_67"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/a-b2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/a-c3-b2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/b-a_67"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/b2-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/16/b2-c3-a"
+      }
+    ]
+  },
+  {
+    "route_name": "18Abrenes iela - Dārziņi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/18/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/18/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "20Pētersala - Pļavnieku kapi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/20/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/20/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "21Imanta - Jugla",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/21/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/21/a1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/21/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/21/b-a2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/21/b1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "22Abrenes iela - Lidosta",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/22/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/22/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "23Abrenes iela - Baloži",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/23/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/23/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "24Abrenes iela - Mangaļsala",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/24/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/24/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "25Abrenes iela - Mārupe",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/25/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/25/a-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/25/a3-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/25/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/25/b1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "26Abrenes iela - Katlakalns",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/26/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/26/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "28Jugla - Langstiņi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/28/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/28/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "29Mežciems - Vecmīlgrāvis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/29/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/29/a-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/29/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/29/b-c-a"
+      }
+    ]
+  },
+  {
+    "route_name": "30Centrālā stacija - Daugavgrīva",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/30/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/30/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "31Dārziņi - Jugla",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/31/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/31/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "32Abrenes iela - Piņķi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/32/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/32/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/32/b-c-a"
+      }
+    ]
+  },
+  {
+    "route_name": "33Dārzciems - Jugla",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/33/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/33/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "34Centrāltirgus - Saulīši",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/34/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/34/a-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/34/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/34/b-c-a"
+      }
+    ]
+  },
+  {
+    "route_name": "36Imanta - Vakarbuļļi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/36/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/36/a-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/36/a-b2"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/36/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/36/b1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "37Esplanāde - Imanta",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/37/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/37/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "38Abrenes iela - Dzirciema iela",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/38/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/38/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "39Abrenes iela - Lāčupes kapi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/39/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/39/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "41Esplanāde - Imanta",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/41/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/41/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "43Abrenes iela - Skulte",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/43/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/43/a-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/43/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "44Ziepniekkalns - Zolitūde",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/44/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/44/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "46Ziepniekkalns - Zolitūde",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/46/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/46/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "47Purvciems - Getliņi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/47/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/47/a1-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/47/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/47/b-a1"
+      }
+    ]
+  },
+  {
+    "route_name": "48Pļavnieku kapi - Sarkandaugava",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/48/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/48/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "49Daudersala - Ķengarags",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/49/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/49/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "50Abrenes iela - TEC 2",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/50/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/50/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "51Abrenes iela - Ulbroka",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/51/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/51/a-b1"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/51/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/51/b1-a"
+      }
+    ]
+  },
+  {
+    "route_name": "52Abrenes iela - Pļavnieku kapi",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/52/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/52/a-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/52/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/52/b-c-a"
+      }
+    ]
+  },
+  {
+    "route_name": "53Esplanāde - Zolitūde",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/53/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/53/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "54Botāniskais dārzs - Voleri",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/54/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/54/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/54/b-a1"
+      }
+    ]
+  },
+  {
+    "route_name": "55Abrenes iela - Jaunmārupe",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/55/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/55/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "56Daugavgrīva - Ziepniekkalns",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/56/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/56/a-c-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/56/b-a"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/56/b-c-a"
+      }
+    ]
+  },
+  {
+    "route_name": "57Abrenes iela - Ķīpsala",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/57/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/57/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "58Purvciems - Vecmīlgrāvis",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/58/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/58/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "60Ķengarags - Ziepniekkalns",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/60/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/60/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "63Mežciems - Šampēteris",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/63/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#bus/63/b-a"
+      }
+    ]
+  },
+  {
+    "route_name": "N1Centrs - Teika - Jugla - Mežciems - Teika - Centrs",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#nightbus/n1/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#nightbus/n1/a-b1"
+      }
+    ]
+  },
+  {
+    "route_name": "N4Centrs - Āgenskalna tirgus - Zolitūde - Imanta - Centrs",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#nightbus/n4/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#nightbus/n4/a-b1"
+      }
+    ]
+  },
+  {
+    "route_name": "N6Centrs - Purvciems - Pļavnieki - Dārzciems - Centrs",
+    "directions": [
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#nightbus/n6/a-b"
+      },
+      {
+        "name": "",
+        "url": "https://saraksti.lv/#nightbus/n6/a-b1"
+      }
+    ]
+  }
+]
