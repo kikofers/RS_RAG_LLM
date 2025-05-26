@@ -1,4 +1,2 @@
-routes_with_directions.json
-data/routes.json
-scripts/__pycache__
-scripts/test.py
+scripts\test.py
+scripts\__pycache__
