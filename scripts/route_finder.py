@@ -1,5 +1,11 @@
 """
-This script is designed to find the shortest path between two nodes in a binary graph.
+Finds the most efficient path from source to target, minimizing distance and penalizing public transport changes.
+    * param Graph: The networkx graph
+    * param source: Source node id
+    * param target: Target node id
+    * param change_penalty: Penalty (in km) for changing public transport routes
+    * return: (path, total_distance, num_changes)
+
 The binary graph's structure is this:
  * Nodes: id, label (the same as id), interval (empty), name, latitude, longitude.
  * Edges: source node, target node, type (direction), id, label (empty), interval (empty), weight (1), routes (comma-separated list of route_short_names), types (comma-separated list of route_types).
@@ -7,16 +13,7 @@ The binary graph's structure is this:
 
 import heapq
 
-# Modified Dijkstra's algorithm with route change penalty
 def find_path(Graph, source, target, change_penalty=1.0):
-    """
-    Finds the most efficient path from source to target, minimizing distance and penalizing public transport changes.
-     * param Graph: The networkx graph
-     * param source: Source node id
-     * param target: Target node id
-     * param change_penalty: Penalty (in km) for changing public transport routes
-     * return: (path, total_distance, num_changes)
-    """
     heap = []
     # (total_cost, distance_so_far, num_changes, current_node, path, current_route)
     heapq.heappush(heap, (0, 0, 0, source, [source], None))
