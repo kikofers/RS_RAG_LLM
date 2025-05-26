@@ -1,6 +1,4 @@
-# from route_finder import find_path
 from shortest_route import find_shortest_path
-import networkx as nx
 import pickle
 
 # Load the graph from the binary file
