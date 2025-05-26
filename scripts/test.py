@@ -1,16 +1,33 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+"""
+Test file if anything needs to be tested in the code:
 
-driver = webdriver.Chrome()
-driver.get("https://saraksti.rigassatiksme.lv/index.html#tram/1/a-b")
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  TESTING ROUTE FINDER
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+"""
 
-WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "spanDir1"))).click()
+from route_finder import find_path
+import pickle
 
-WebDriverWait(driver, 10).until(
-    EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#ulDirections a"))
-)
+# Load the graph from the binary file
+with open("graphs/binary.gpickle", "rb") as f:
+    Graph = pickle.load(f)
+    print("Graph loaded successfully.")
 
-print("Dropdown loaded.")
-driver.quit()
+# Example source and target stops
+source = "1428"
+target = "0194"
+
+# Find the path
+path = find_path(Graph, source, target)
+
+# Print the path found
+if path:
+    for i, stop in enumerate(path):
+        node_data = Graph.nodes[stop]
+        print(f"ID: {stop}, Stop name: {node_data['name']}")
+        if i < len(path) - 1:
+            next_stop = path[i + 1]
+            edge_data = Graph.get_edge_data(stop, next_stop)
+            routes = edge_data.get("routes", "")
+            print(f"  └─ Take route(s): {routes} to {Graph.nodes[next_stop]['name']}")

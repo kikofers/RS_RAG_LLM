@@ -10,10 +10,11 @@ The script uses data from the following files:
 These data files were taken from Rīgas Satiksme's GTFS feed, which is available at:
 https://data.gov.lv/dati/lv/dataset/marsrutu-saraksti-rigas-satiksme-sabiedriskajam-transportam
 
-The plan is to make a working transport graph with stop connectivity and route labels.
+This script makes a complete 1:1 public transport graph map, just like at https://saraksti.lv/#riga/map.
 We ignore arrival and departure times, because we will limit the need for schedule validity and exact arrival/departure time logic.
+Since the model won't be able to know the time of which the user is asking. Also it might be too complex to implement in the model.
 
-Structure of the data files:
+Structure of the GTFS data files:
  * stops.txt:
    stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,stop_url,location_type,parent_station.
   
