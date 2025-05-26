@@ -38,6 +38,7 @@ Graph structure:
 import pandas as pd
 import networkx as nx
 import pickle
+import math
 
 stops = pd.read_csv("data/stops.txt")
 routes = pd.read_csv("data/routes.txt")
@@ -52,6 +53,18 @@ route_info = routes.set_index("route_id")[["route_short_name", "route_type"]].to
 
 # Map stop_id → stop_name, lat, lon
 stop_info = stops.set_index("stop_id")[["stop_name", "stop_lat", "stop_lon"]].to_dict("index")
+
+
+def haversine(lat1, lon1, lat2, lon2):
+    # Convert decimal degrees to radians
+    lat1, lon1, lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])
+    # Haversine formula
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
+    c = 2 * math.asin(math.sqrt(a))
+    r = 6371  # Radius of earth in kilometers
+    return c * r
 
 Graph = nx.DiGraph()
 
@@ -78,17 +91,29 @@ for trip_id, group in stop_times_grouped:
         from_stop = stops_in_trip[i]
         to_stop = stops_in_trip[i + 1]
 
+        # Get coordinates for both stops
+        from_info = stop_info.get(from_stop)
+        to_info = stop_info.get(to_stop)
+        if not from_info or not to_info:
+            continue
+        try:
+            lat1, lon1 = float(from_info["stop_lat"]), float(from_info["stop_lon"])
+            lat2, lon2 = float(to_info["stop_lat"]), float(to_info["stop_lon"])
+        except Exception:
+            continue
+        distance = haversine(lat1, lon1, lat2, lon2)
+
         if Graph.has_edge(from_stop, to_stop):
             Graph[from_stop][to_stop]["routes"].add(route_short_name)
             Graph[from_stop][to_stop]["types"].add(route_type)
         else:
-            Graph.add_edge(from_stop, to_stop, routes={route_short_name}, types={route_type})
+            Graph.add_edge(from_stop, to_stop, routes={route_short_name}, types={route_type}, weight=distance)
 
 # Save the graph to a binary file for faster loading later
 with open("graphs/binary.gpickle", "wb") as f:
     pickle.dump(Graph, f)
 
-# Convert sets to comma-separated strings for GraphML compatibility
+# Convert sets to comma-separated strings for Gexf compatibility
 for u, v, data in Graph.edges(data=True):
     data["routes"] = ",".join(str(r) for r in sorted(data["routes"]))
     data["types"] = ",".join(str(t) for t in sorted(data["types"]))

@@ -41,14 +41,3 @@ def find_path(Graph, source, target, max_transfers=10):
                     queue.append(State(neighbor, path + [neighbor], primary_route, transfers + 1))
 
     return None
-
-""" DISCARDED!
-# Find the shortest path using Dijkstra's algorithm
-path = nx.shortest_path(Graph, source, target)
-
-# Print the shortest path with stop details
-print(f"Shortest path from {source} to {target}:")
-for stop in path:
-    node_data = Graph.nodes[stop]
-    print(f"ID: {stop}, Stop name: {node_data['name']}")
-"""
