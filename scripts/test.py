@@ -1,36 +1,67 @@
-"""
-Test script for RouteFinder class and route finding functions.
-"""
+from llama_cpp import Llama
 from route_finder import RouteFinder
 
-# Initialize the RouteFinder
+# Initialize RouteFinder once
 rf = RouteFinder()
 
-# Test: List all stop names
-print("\nAll stop names (first 10):")
-all_stops = rf.list_stop_names()
-print(all_stops)
+# Tool: List all stop names
+def list_stop_names():
+    """Return a list of all stop names."""
+    return rf.list_stop_names()
 
-# Test: Search stops by partial name
-partial = input("Enter partial stop name to search: ")
-matching_stops = rf.search_stops(partial)
-print(f"Stops matching '{partial}' (first 10): {matching_stops}")
+# Tool: Search stops by partial name
+def search_stops(partial_name: str):
+    """Return a list of stop names matching the partial input."""
+    return rf.search_stops(partial_name)
 
-# Test: Find route between two stops
-source = input("Enter source stop name: ")
-target = input("Enter target stop name: ")
-result = rf.find_route(source, target)
+# Tool: Find route between two stops
+def find_route(source: str, target: str):
+    """Find the shortest route between two stops."""
+    return rf.find_route(source, target)
 
-if result and result["path"]:
-    print(f"\nPath found from {source} to {target}:")
-    for i, stop in enumerate(result["path"]):
-        node_data = rf.graph.nodes[stop]
-        print(f"ID: {stop}, Stop name: {node_data['name']}")
-        if i < len(result["path"]) - 1:
-            next_stop = result["path"][i + 1]
-            edge_data = rf.graph.get_edge_data(stop, next_stop)
-            routes = edge_data.get("routes", "")
-            print(f"  └─ Take route(s): {routes} to {rf.graph.nodes[next_stop]['name']}")
-    print(f"Total distance: {result['distance']:.2f} km, Number of changes: {result['num_changes']}")
-else:
-    print("No path found.")
+# Register tools for Llama (OpenAI function-calling style)
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "list_stop_names",
+            "description": "List all stop names in the network.",
+            "parameters": {}
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_stops",
+            "description": "Search for stops by partial name.",
+            "parameters": {
+                "partial_name": {"type": "string", "description": "Partial stop name to search for."}
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "find_route",
+            "description": "Find the shortest route between two stops.",
+            "parameters": {
+                "source": {"type": "string", "description": "Source stop name."},
+                "target": {"type": "string", "description": "Target stop name."}
+            }
+        }
+    }
+]
+
+# Initialize Llama with tools (llama-cpp-python >=0.2.70)
+llm = Llama(
+    model_path="model/tinyllama-1.1b-chat-v1.0.Q5_K_M.gguf",
+    n_ctx=2048,
+    n_threads=8,
+    n_gpu_layers=20   # optional: offload first N layers to GPU
+)
+
+response = llm.create_chat_completion([
+    {"role":"system","content":"You are a helpful assistant."},
+    {"role":"user","content":"Hello, how are you?"}
+])
+print(response['choices'][0]['message']['content'])
