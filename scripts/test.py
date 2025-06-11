@@ -1,3 +1,16 @@
+"""
+Done:
+1. Add stop name lookup and validation functions.
+2. Create a wrapper function that loads the graph once and exposes pathfinding and stop lookup.
+
+TODO:
+3. Create a Tool Interface for the LLM that exposes all the necessary functions.
+4. Integrate with the Llama LLM.
+5. Prompt engineering.
+6. Test the Integration.
+7. (Optional) Build a Simple API or CLI
+"""
+
 from shortest_route import find_shortest_path
 import pickle
 
