@@ -1,2 +1,4 @@
 scripts/__pycache__
 models/
+scripts/test_llama.py
+text/
