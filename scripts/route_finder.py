@@ -44,6 +44,10 @@ class RouteFinder:
         # Remove extra spaces again
         s = re.sub(r'\s+', ' ', s).strip()
         return s
+    
+    def _find_stop_ids(self, stop_name):
+            """Return all node IDs that match the given stop name exactly."""
+            return [node for node, data in self.graph.nodes(data=True) if data.get("name") == stop_name]
 
     def search_bus_stop(self, query, limit=3, score_cutoff=60):
         """Advanced smart search for bus stops. Returns up to 3 (stop_name, score) sorted by score descending."""
