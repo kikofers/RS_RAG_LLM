@@ -7,6 +7,22 @@ import re
 
 rf = RouteFinder()
 
+"""
+5. Prompt Construction
+Structure:
+[Instructions]  
+[Context chunks: chunk1\n\nchunk2\n\nchunk3]  
+Question: [User query]
+
+6. Response Generation
+Use LLM to answer based on context.
+Optional: include citations or source metadata in answer if needed.
+
+7. Evaluation / Tuning
+Test for hallucination, missing facts.
+Tune chunk size, retrieval k, embedding model, and prompt format.
+"""
+
 # Model and device setup
 model_id = "models/Mistral-7B-Instruct-v0.2-Function-Calling"
 model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16, device_map="auto")
