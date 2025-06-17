@@ -1,4 +1,5 @@
 from pypdf import PdfReader
+import re
 from scrape_html import normalize_white_spaces
 
 pdfs = [
