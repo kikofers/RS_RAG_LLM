@@ -124,23 +124,6 @@ tools = [
                 "required": ["origin", "destination"]
             }
         }
-    },
-    {
-        "type": "function",
-        "function": {
-            "name": "search_bus_stop",
-            "description": "Searches for bus stops matching a partial or fuzzy name query.",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "query": {
-                        "type": "string",
-                        "description": "Partial or fuzzy name of the bus stop to search for."
-                    }
-                },
-                "required": ["query"]
-            }
-        }
     }
 ]
 
@@ -191,9 +174,9 @@ def main():
 
         # Call the appropriate function
         if func_name == "find_route":
-            route = rf.find_route(args["origin"], args["destination"])
-            func_result = json.dumps(route, ensure_ascii=False)
-            print(f"[DEBUG] Called find_route with origin={args['origin']}, destination={args['destination']}")
+            description = rf.get_route_description(args["origin"], args["destination"])
+            func_result = description
+            print(f"[DEBUG] Called get_route_description with origin={args['origin']}, destination={args['destination']}")
             print(f"[DEBUG] Function result: {func_result}")
         elif func_name == "search_bus_stop":
             results = rf.search_bus_stop(args["query"])
@@ -212,7 +195,7 @@ def main():
         inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt")
         model_inputs = inputs.to(model_device)
 
-        generate_ids = model.generate(model_inputs, streamer=streamer, do_sample=True, max_new_tokens=128)
+        generate_ids = model.generate(model_inputs, streamer=streamer, do_sample=True, max_new_tokens=512)
         decoded = tokenizer.batch_decode(generate_ids)
         final_response = decoded[0]
         print("Assistant:", final_response)
