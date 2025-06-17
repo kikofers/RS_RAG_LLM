@@ -7,8 +7,10 @@ def chunk_text(text, chunk_size=500):
         yield ' '.join(words[i:i+chunk_size])
 
 def main():
-    input_dir = Path('../processed_text')
-    output_dir = Path('../processed_text_chunks')
+    # Get the absolute path to the script's parent directory (root)
+    root_dir = Path(__file__).resolve().parent.parent
+    input_dir = root_dir / 'processed_text'
+    output_dir = root_dir / 'chunks'
     output_dir.mkdir(exist_ok=True)
 
     for file in input_dir.glob('*.txt'):
