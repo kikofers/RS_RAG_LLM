@@ -5,28 +5,32 @@ from route_finder import RouteFinder
 import re
 
 # Model and device setup
-model_id = "models/Mistral-7B-Instruct-v0.2-Function-Calling"  # Use your local path
+model_id = "models/Mistral-7B-Instruct-v0.2-Function-Calling"
+
+model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16, device_map="auto")
 tokenizer = AutoTokenizer.from_pretrained(model_id)
-model = AutoModelForCausalLM.from_pretrained(
-    model_id,
-    torch_dtype=torch.float16,
-    device_map="auto"
-)
+streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
 
 rf = RouteFinder()
 
-# Function-calling schema (only find_route, no search_stops)
+# Function-calling schema (only find_route)
 tools = [
     {
         "type": "function",
         "function": {
             "name": "find_route",
-            "description": "Finds a route between two locations. Use the provided stop names as-is.",
+            "description": "Finds a route between two bus stops.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "origin": {"type": "string", "description": "Name of the source stop (use as provided)."},
-                    "destination": {"type": "string", "description": "Name of the target stop (use as provided)."}
+                    "origin": {
+                        "type": "string",
+                        "description": "Name of the source stop (use as provided)."
+                    },
+                    "destination": {
+                        "type": "string",
+                        "description": "Name of the target stop (use as provided)."
+                    }
                 },
                 "required": ["origin", "destination"]
             }
