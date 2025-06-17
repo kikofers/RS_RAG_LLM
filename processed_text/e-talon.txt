@@ -1,0 +1,89 @@
+E-talons ir vienota elektroniskā biļete Rīgas pilsētas sabiedriskā transportā, kas nodrošina norēķinus par braucieniem. Iegādātā biļete e-talonā ir derīga 12 mēnešus no tās iegādes brīža, ja vien nav mainīts biļetes tarifs vai biļetes veids nav anulēts. Šādos gadījumos "Rīgas satiksme" paredz pārejas periodu biļetes derīgumam.
+E-talonu nedrīkst locīt, spiest, lauzt, burzīt, mērcēt un veikt citas līdzīgas darbības, kas padara to lietošanai nederīgu;
+Kā izmantot e-talonu:
+* Iekāpjot sabiedriskajā transportā – autobusā, trolejbusā vai tramvajā, e-talons jāpietuvina elektroniskajam kartes lasītājam. Šādi brauciens tiek reģistrēts, un pasažieris apmaksā savu braucienu. Brauciena reģistrācija jāveic arī tiem pasažieriem, kuri izmanto 100% braukšanas maksas atvieglojumus.
+
+Tālāk ir aprakstīti visi e-talonu veidi:
+
+Personalizētais e-talons:
+* izgatavots no plastikāta;
+* derīgs 10 gadus;
+* piesaistīts tikai vienam lietotājam;
+* satur klienta datus – fotokartīti, vārdu, uzvārdu;
+* lietot var tikai kartes īpašnieks;
+* obligāts tiem, kuri sabiedriskajā transportā izmanto atlaides, izņemot tos, kuri izmanto valsts noteiktos 100% braukšanas maksas atvieglojumus (1. un 2. grupas invalīdi un personas ar invaliditāti līdz 18 gadu vecumam; skatīt šeit), bet pieteikties var ikviens pasažieris, dodoties uz klientu centru un aizpildot pieteikšanās anketu;
+* nozaudēšanas gadījumā ir iespējams bloķēt un atjaunot, nezaudējot apmaksātos pakalpojumus;
+* biļetes iegādāties iespējams vairāk nekā 400 tirdzniecības vietās (tirdzniecības vietas skatīt šeit);
+* biļetes jāizmanto 12 mēnešu laikā no iegādes brīža, izņemot, ja mainās biļetes veida tarifs vai ja biļetes veids tiek anulēts un "Rīgas satiksme" ir noteikusi pārejas periodu biļetes veida derīgumam;
+* e-talonu nedrīkst locīt, spiest, lauzt, burzīt, mērcēt un veikt citas līdzīgas darbības, kas padara to lietošanai nederīgu;
+* pirmreizējā izsniegšana ir bezmaksas, atkārtota e-talona izgatavošana nozaudēšanas gadījumā maksā EUR 2.85;
+* jāaizpilda anketa e-talona saņemšanai;
+
+Nepersonalizētais e-talons:
+* izgatavots no plastikāta;
+* derīgs 10 gadus;
+* nepersonalizētā e-talona derīguma termiņu iespējams uzzināt "Rīgas satiksmes” klientu centros un biļešu tirdzniecības vietās;
+* nesatur klienta datus – var lietot vairāki pasažieri;
+* var iegādāties "Rīgas satiksmes" klientu centros, galapunktos, kā arī biļešu tirdznieības vietā, ja klients vienlaikus iegādās vismaz 10 laika biļetes;
+* e-talona saņemšanas brīdī klients iemaksā 2,85 EUR garantijas naudu (ar PVN), ko var atgūt, ja e-talons tiek atdots lietošanas kārtībā 6 mēnešu laikā pēc derīguma beigām. Savukārt to bez maksas izsniedz, ja tiek iegādātas biļetes vismaz par 15 EUR;
+* piemērtos klientiem, kas regulāri izmanto sabiedrisko transportu, tajā skaitā mēneša abonementa biļetes bez atlaidēm, un nevēlas lietot personalizētu e-talonu;
+* nozaudēšanas gadījumā nav iespējams bloķēt un atjaunot;
+
+Rīdzinieka karte:
+* Karti var saņemt Rīgā deklarētās personas vai personas, kurām ir īpašums Rīgā;
+* pirmreizējā izsniegšana ir bezmaksas, atkārtota Rīdzinieka kartes izgatavošana nozaudēšanas gadījumā maksā EUR 2.85;
+* derīga 10 gadus;
+* piesaistīta vienam lietotājam;
+* satur klienta datus – fotokartīti, vārdu, uzvārdu, personas kodu;
+* nozaudēšanas gadījumā ir iespējams bloķēt un atjaunot, nezaudējot apmaksātos pakalpojumus;
+* biļetes iegādāties iespējams vairāk nekā 400 tirdzniecības vietās (tirdzniecības vietas skatīt šeit);
+* ielādēt var mēneša biļetes un laika biļetes;
+* biļetes jāizmanto 12 mēnešu laikā no iegādes brīža, izņemot, ja mainās biļetes veida tarifs vai ja biļetes veids tiek anulēts un "Rīgas satiksme" ir noteikusi pārejas periodu biļetes veida derīgumam;
+* Rīdzinieka karti nedrīkst locīt, spiest, lauzt, burzīt, mērcēt un veikt citas līdzīgas darbības, kas padara to lietošanai nederīgu;
+* ja saņēmējs ir deklarēts Rīgā, tad Rīdzinieka karti var saņemt klientu centrā (pieteikties vizītei var šeit);
+* ja saņēmējam ir īpašums Rīgā, tad Rīdzinieka karti var saņemt klientu centrā (pieteikties vizītei var šeit);
+* jāaizpilda anketa e-talona saņemšanai;
+
+Skolēna karte:
+* paredzēta kā Rīgas pilsētas pašvaldības vispārējās izglītības iestāžu skolēna apliecība;
+* lietotājiem piešķir tiesības saņemt Rīgas pilsētas pašvaldības, pašvaldības kapitālsabiedrību (Rīgas iestāžu) un pašvaldības sadarbības partneru atvieglojumus, pakalpojumus un priekšrocības;
+* piešķir personām, kuras apgūst izglītības programmu Rīgas pilsētas pašvaldības vispārējās izglītības iestādē – neatkarīgi no deklarētās dzīvesvietas;
+* piešķir personām, kuras apgūst izglītības programmu ārpus Rīgas reģistrētā vispārējās izglītības iestādē, bet kuras dzīvesvieta ir deklarēta Rīgas pilsētas administratīvajā teritorijā;
+* piesaistīta vienam lietotājam;
+* satur klienta datus – fotokartīti, vārdu, uzvārdu, personas kodu;
+* lietot var tikai kartes īpašnieks;
+* derīguma termiņš tiek norādīts uz kartes vai kartes derīguma termiņš beidzas tad, kad skolēns beidz mācības;
+* izgatavota no plastikāta;
+* nozaudēšanas gadījumā ir iespējams bloķēt un atjaunot;
+* skolēna e-karti nedrīkst locīt, spiest, lauzt, burzīt, mērcēt un veikt citas līdzīgas darbības, kas padara to lietošanai nederīgu;
+* jāaizpilda anketa e-talona saņemšanai;
+* pirmreizējā izsniegšana ir bezmaksas, atkārtota Skolēna e kartes izgatavošana nozaudēšanas gadījumā maksā EUR 2.85.
+
+Pavadoņa karte:
+* izgatavota no plastikāta;
+* derīga 10 gadus;
+* izsniedz personai ar 1. grupas invaliditāti un bērnam ar invaliditāti;
+* satur personas datus – personas ar invaliditāti personas kods un fotogrāfija;
+* Pavadoņa karti drīkst izmantot, pārvietojoties sabiedriskajā transportlīdzeklī kopā ar personu ar invaliditāti, kam pavadoņa karte tika izsniegta;
+* Pavadoņa kartes vidū izgatavotais caurums palīdz pasažieriem ar redzes invaliditāti atšķirt karti no citiem e-talonu veidiem;
+* nozaudēšanas gadījumā ir iespējams bloķēt un atjaunot;
+* karti var noformēt “Rīgas satiksmes” klientu centros (skatīt šeit);
+* karti nedrīkst locīt, spiest, lauzt, burzīt, mērcēt un veikt citas līdzīgas darbības, kas padara to lietošanai nederīgu;
+* pirmreizējā izsniegšana ir bezmaksas, atkārtota e-talona izgatavošana nozaudēšanas gadījumā maksā EUR 2.85;
+
+Juridiskās personas klienta karte
+* izgatavota no plastikāta;
+* derīga 10 gadus;
+* nepersonalizēta (neietver personas datus);
+* izsniedz juridiskām personām;
+* Biļetes jāizmanto 12 mēnešu laikā no iegādes brīža, izņemot, ja mainās biļetes veida tarifs vai ja biļetes veids tiek anulēts un "Rīgas satiksme" ir noteikusi pārejas periodu biļetes veida derīgumam;
+* Klientiem, ar kuriem noslēgts biļešu iegādes līgums pirmreizējā karšu izsniegšana lietošanai ir bezmaksas, pirmreizējā maksa klientiem bez līguma 2.85;
+* Atkārtota e-talona izgatavošana nozaudēšanas vai sabojāšanas gadījumā maksā EUR 2.85.
+
+Dzeltenais e-talons:
+* izgatavots no kartona, ar elektronisko čipu;
+* iespējams iegādāties mēneša, laika un dienas biļetes;
+* biļetes iegādāties iespējams vairāk nekā 400 tirdzniecības vietās;
+* ērts tiem pasažieriem, kuri Rīgas sabiedrisko transportu izmanto neregulāri, tajā skaitā arī Rīgas viesiem;
+* biļetes jāizmanto 12 mēnešu laikā no iegādes brīža, izņemot, ja mainās biļetes veida tarifs vai biļetes veids tiek anulēts un "Rīgas satiksme" ir noteikusi pārejas periodu biļetes veida derīgumam;
+* e-talons paredzēts vienas personas brauciena reģistrācijai.
