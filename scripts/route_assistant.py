@@ -5,6 +5,15 @@ import torch
 from route_finder import RouteFinder
 import re
 
+rf = RouteFinder()
+
+# Model and device setup
+model_id = "models/Mistral-7B-Instruct-v0.2-Function-Calling"
+model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16, device_map="auto")
+tokenizer = AutoTokenizer.from_pretrained(model_id)
+model_device = next(model.parameters()).device
+streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
+
 """
 How the messages should be setted up for the model:
 messages = [
@@ -88,21 +97,6 @@ def parse_tool_call(response):
 
 rf = RouteFinder()
 
-# Model and device setup
-model_id = "models/Mistral-7B-Instruct-v0.2-Function-Calling"
-# model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16, device_map="auto")
-# tokenizer = AutoTokenizer.from_pretrained(model_id)
-
-device = "cuda" 
-
-model = AutoModelForCausalLM.from_pretrained("models/Mistral-7B-Instruct-v0.2-Function-Calling", torch_dtype=torch.float16, device_map="auto")
-tokenizer = AutoTokenizer.from_pretrained("models/Mistral-7B-Instruct-v0.2-Function-Calling")
-
-# Set device to the model's first parameter's device
-model_device = next(model.parameters()).device
-
-streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
-
 tools = [
     {
         "type": "function",
@@ -122,6 +116,23 @@ tools = [
                     }
                 },
                 "required": ["origin", "destination"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_bus_stop",
+            "description": "Searches for bus stops matching a query string. Returns a list of (stop_name, confidence_score) pairs.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "Partial or full bus stop name to search for."
+                    }
+                },
+                "required": ["query"]
             }
         }
     }
@@ -153,53 +164,90 @@ messages = [
     },
 ]
 
+def get_user_choice(stop_type, options):
+    print(f"Multiple {stop_type} stop candidates found:")
+    for idx, (name, score) in enumerate(options):
+        print(f"  {idx+1}. {name} (confidence: {score:.2f})")
+    while True:
+        choice = input(f"Select the {stop_type} stop by number (1-{len(options)}): ")
+        if choice.isdigit() and 1 <= int(choice) <= len(options):
+            return options[int(choice)-1][0]
+        print("Invalid selection. Please try again.")
+
 def main():
-    # Prepare input for model as expected
-    inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt")
-    model_inputs = inputs.to(model_device)
+    print("Welcome to the Riga Public Transport Assistant!")
+    while True:
+        user_query = input("How can I help you? (e.g. Find me a route from Imanta to Jugla, or type 'exit' to quit): ")
+        if user_query.strip().lower() in ["exit", "quit", "q"]:
+            print("Goodbye!")
+            break
+        messages = [
+            {
+                "role": "user",
+                "content": (
+                    "You are Mistral with function-calling supported. You are provided with function signatures within <tools></tools> XML tags. "
+                    "You may call one or more functions to assist with the user query. Don't make assumptions about what values to plug into functions. "
+                    "Here are the available tools:\n"
+                    "<tools>\n"
+                    f"{tools}\n"
+                    "</tools>\n\n"
+                    "For each function call, return a JSON object with the function name and arguments within <tool_call></tool_call> XML tags as follows:\n"
+                    "<tool_call>\n"
+                    "{'arguments': <args-dict>, 'name': <function-name>}\n"
+                    "</tool_call>"
+                )
+            },
+            {"role": "assistant", "content": "How can I help you today?"},
+            {"role": "user", "content": user_query}
+        ]
 
-    # No need to call model.to(device) again, model is already on correct device
-    generate_ids = model.generate(model_inputs, streamer=streamer, do_sample=True, max_new_tokens=128)
-    decoded = tokenizer.batch_decode(generate_ids)
-
-    # Parse function call
-    func_call = parse_tool_call(decoded[0])
-    if not func_call or "name" not in func_call or "arguments" not in func_call:
-        print("Could not parse function call from LLM. Please try again.")
-        print("Raw model output:", decoded[0])  # Print raw output for debugging
-        # Do not return here; continue to allow further processing or debugging
-    else:
-        func_name = func_call["name"]
-        args = func_call["arguments"]
-
-        # Call the appropriate function
-        if func_name == "find_route":
-            description = rf.get_route_description(args["origin"], args["destination"])
-            func_result = description
-            print(f"[DEBUG] Called get_route_description with origin={args['origin']}, destination={args['destination']}")
-            print(f"[DEBUG] Function result: {func_result}")
-        elif func_name == "search_bus_stop":
-            results = rf.search_bus_stop(args["query"])
-            func_result = json.dumps(results, ensure_ascii=False)
-            print(f"[DEBUG] Called search_bus_stop with query={args['query']}")
-            print(f"[DEBUG] Function result: {func_result}")
-        else:
-            func_result = json.dumps({"error": "Unknown function"}, ensure_ascii=False)
-            print(f"[DEBUG] Unknown function: {func_name}")
-
-        # Pass function result back to LLM for final answer
-        messages.append({"role": "assistant", "content": f"[FUNCTION RESULT]\n{func_result}"})
-        print(f"[DEBUG] Messages before final LLM call: {messages}")
-
-        # Get final answer
-        inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt")
-        model_inputs = inputs.to(model_device)
-
-        generate_ids = model.generate(model_inputs, streamer=streamer, do_sample=True, max_new_tokens=512)
-        decoded = tokenizer.batch_decode(generate_ids)
-        final_response = decoded[0]
-        print("Assistant:", final_response)
-        messages.append({"role": "assistant", "content": final_response})
+        while True:
+            # LLM step
+            inputs = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True, return_tensors="pt")
+            model_inputs = inputs.to(model_device)
+            generate_ids = model.generate(model_inputs, streamer=streamer, do_sample=True, max_new_tokens=256)
+            decoded = tokenizer.batch_decode(generate_ids)
+            response = decoded[0]
+            func_call = parse_tool_call(response)
+            if not func_call or "name" not in func_call or "arguments" not in func_call:
+                print("Assistant:")
+                print(response)
+                break
+            func_name = func_call["name"]
+            args = func_call["arguments"]
+            # Execute function
+            if func_name == "find_route":
+                func_result = rf.get_route_description(args["origin"], args["destination"])
+            elif func_name == "search_bus_stop":
+                func_result = json.dumps(rf.search_bus_stop(args["query"]), ensure_ascii=False)
+            else:
+                func_result = json.dumps({"error": "Unknown function"}, ensure_ascii=False)
+            # Add function result to conversation
+            messages.append({"role": "assistant", "content": f"[FUNCTION RESULT]\n{func_result}"})
+            # If the LLM needs user input (e.g. to choose a stop), prompt and add as user message
+            if func_name == "search_bus_stop":
+                results = json.loads(func_result)
+                if len(results) > 1 and abs(results[0][1] - results[1][1]) < 0.10:
+                    print("Multiple stop candidates found:")
+                    for idx, (name, score) in enumerate(results):
+                        print(f"  {idx+1}. {name} (confidence: {score:.2f})")
+                    while True:
+                        choice = input(f"Select the stop by number (1-{len(results)}): ")
+                        if choice.strip().lower() in ["exit", "quit", "q"]:
+                            print("Goodbye!")
+                            return
+                        if choice.isdigit() and 1 <= int(choice) <= len(results):
+                            chosen = results[int(choice)-1][0]
+                            break
+                        print("Invalid selection. Please try again.")
+                    messages.append({"role": "user", "content": f"I choose: {chosen}"})
+            # Otherwise, let LLM continue
+            else:
+                # After find_route, print and exit inner loop
+                if func_name == "find_route":
+                    print("Assistant:")
+                    print(func_result)
+                    break
 
 if __name__ == "__main__":
     main()

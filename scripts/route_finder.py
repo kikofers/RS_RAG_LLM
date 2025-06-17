@@ -159,7 +159,7 @@ class RouteFinder:
 
     def get_route_description(self, source_name, target_name):
         """
-        Returns a human-friendly route description for the LLM, including transport type.
+        Returns a human-friendly route description for the LLM, using 'public transport' instead of 'line'.
         """
         route_info = self.find_route(source_name, target_name)
         if not route_info or not route_info.get("path"):
@@ -169,40 +169,30 @@ class RouteFinder:
         stops = [self.graph.nodes[node_id].get("name", node_id) for node_id in path]
         description = []
         current_line = None
-        current_type = None
         segment_start = 0
 
         for i in range(len(path) - 1):
             edge_data = self.graph.get_edge_data(path[i], path[i+1])
             routes = edge_data.get("routes", "")
-            types = edge_data.get("types", "")
             if isinstance(routes, set):
                 routes = list(routes)
             else:
                 routes = routes.split(",")
-            if isinstance(types, set):
-                types = list(types)
-            else:
-                types = types.split(",")
             main_route = routes[0] if routes else "unknown"
-            main_type_code = types[0] if types else "unknown"
-            main_type = self.get_human_transport_type(main_type_code)
             if current_line is None:
                 current_line = main_route
-                current_type = main_type
                 segment_start = 0
-            elif main_route != current_line or main_type != current_type:
+            elif main_route != current_line:
                 description.append(
-                    f"Take {current_type} {current_line} from {stops[segment_start]} to {stops[i]}."
+                    f"Take public transport {current_line} from {stops[segment_start]} to {stops[i]}."
                 )
                 description.append(
-                    f"Change to {main_type} {main_route} at {stops[i]}."
+                    f"Change to public transport {main_route} at {stops[i]}."
                 )
                 current_line = main_route
-                current_type = main_type
                 segment_start = i
         description.append(
-            f"Take {current_type} {current_line} from {stops[segment_start]} to {stops[-1]}."
+            f"Take public transport {current_line} from {stops[segment_start]} to {stops[-1]}."
         )
         description.append(
             f"Total distance: {route_info['distance']:.2f} km. Number of changes: {route_info['num_changes']}."
