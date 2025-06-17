@@ -125,13 +125,79 @@ class RouteFinder:
                     best_path = path
                     best_num_changes = num_changes
         if best_path is not None:
+            # Collect all unique routes used in the path
+            routes_used = set()
+            for i in range(len(best_path) - 1):
+                edge_data = self.graph.get_edge_data(best_path[i], best_path[i+1])
+                if edge_data and 'routes' in edge_data:
+                    routes = edge_data['routes']
+                    if isinstance(routes, set):
+                        routes_used.update(routes)
+                    else:
+                        routes_used.update(routes.split(','))
             return {
                 "path": best_path,
                 "distance": best_distance,
-                "num_changes": best_num_changes
+                "num_changes": best_num_changes,
+                "routes": sorted(routes_used)
             }
         else:
             return None
+
+    def get_human_transport_type(self, type_code):
+        """
+        Maps GTFS type codes to human-friendly transport type strings.
+        """
+        if type_code == "3":
+            return "bus"
+        elif type_code == "900":
+            return "tram"
+        elif type_code == "800":
+            return "trolleybus"
+        else:
+            return type_code  # fallback to code if unknown
+
+    def get_route_description(self, source_name, target_name):
+        """
+        Returns a human-friendly route description for the LLM, using 'public transport' instead of 'line'.
+        """
+        route_info = self.find_route(source_name, target_name)
+        if not route_info or not route_info.get("path"):
+            return f"No route found between {source_name} and {target_name}."
+
+        path = route_info["path"]
+        stops = [self.graph.nodes[node_id].get("name", node_id) for node_id in path]
+        description = []
+        current_line = None
+        segment_start = 0
+
+        for i in range(len(path) - 1):
+            edge_data = self.graph.get_edge_data(path[i], path[i+1])
+            routes = edge_data.get("routes", "")
+            if isinstance(routes, set):
+                routes = list(routes)
+            else:
+                routes = routes.split(",")
+            main_route = routes[0] if routes else "unknown"
+            if current_line is None:
+                current_line = main_route
+                segment_start = 0
+            elif main_route != current_line:
+                description.append(
+                    f"Take public transport {current_line} from {stops[segment_start]} to {stops[i]}."
+                )
+                description.append(
+                    f"Change to public transport {main_route} at {stops[i]}."
+                )
+                current_line = main_route
+                segment_start = i
+        description.append(
+            f"Take public transport {current_line} from {stops[segment_start]} to {stops[-1]}."
+        )
+        description.append(
+            f"Total distance: {route_info['distance']:.2f} km. Number of changes: {route_info['num_changes']}."
+        )
+        return "\n".join(description)
 
 def find_path(Graph, source, target, change_penalty=1.0):
     """
