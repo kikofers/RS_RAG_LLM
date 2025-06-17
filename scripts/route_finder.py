@@ -23,8 +23,7 @@ class RouteFinder:
     Usage:
         rf = RouteFinder()
         rf.find_route(source_name, target_name)
-        rf.list_stop_names()
-        rf.search_stops(partial_name)
+        rf.search_bus_stop(partial_name)
     """
     def __init__(self, graph_path="graphs/binary.gpickle"):
         with open(graph_path, "rb") as f:
