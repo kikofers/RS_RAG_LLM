@@ -14,7 +14,6 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 model_device = next(model.parameters()).device
 streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
 
-
 def parse_tool_call(response):
     """
     Extracts and parses all <tool_call>...</tool_call> blocks from the model output.
@@ -199,7 +198,7 @@ def main():
                             break
                         print("Invalid selection. Please try again.")
                     messages.append({"role": "user", "content": f"I choose: {chosen}"})
-                    
+
             # Otherwise, let LLM continue
             else:
                 # After find_route, print and exit inner loop
