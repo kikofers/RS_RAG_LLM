@@ -39,11 +39,9 @@ def main():
     device = next(model.parameters()).device
     streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
 
-    print('Enter your query:')
     while True:
         query = input('> ').strip()
         if query.lower() in ['exit', 'quit', 'q']:
-            print('Goodbye!')
             break
         results = search(query, embed_model, vectors, metadatas, k=3)
         context_chunks = []
@@ -59,7 +57,6 @@ def main():
         model_inputs = inputs.to(device)
         generate_ids = model.generate(model_inputs, streamer=streamer, do_sample=True, max_new_tokens=256)
         decoded = tokenizer.batch_decode(generate_ids)
-        print('Assistant:')
         print(decoded[0])
 
 if __name__ == '__main__':
